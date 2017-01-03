@@ -1,28 +1,20 @@
 {
-  "name": "node-slack-bot",
-  "version": "1.0.0",
-  "description": "A sample Beep Boop Node.js Slackbot",
-  "main": "index.js",
+  "name": "HorseGifBot",
+  "version": "0.0.1",
+  "description": "",
+  "main" : "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/beepboophq/node-slack-bot.git"
+  "type": "git",
+  "url": "git+https://github.com/beepboophq/node-slack-bot.git"
   },
-  "keywords": [
-    "slackbot",
-    "bot",
-    "slack"
-  ],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/beepboophq/node-slack-bot/issues"
-  },
-  "homepage": "https://github.com/beepboophq/node-slack-bot#readme",
+  "author": "Team Jazz, Liip AG",
   "dependencies": {
-    "beepboop-botkit": "^1.4.1",
-    "botkit": "~0.2.2"
-  }
+    "botkit": "^0.4.6",
+    "parse-json": "^2.2.0"
+  },
+  "devDependencies": {},
+  "private": true
 }
