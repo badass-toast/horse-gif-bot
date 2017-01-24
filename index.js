@@ -25,7 +25,7 @@ controller.hears(['identify yourself', 'who are you', 'what is your name'],
 
     });
 
-controller.hears(['horse', 'pferd', 'ross', 'rössli', 'cheval', 'gaul'], ['ambient,message_received'], function(bot, message) {
+controller.hears(['horse', 'pferd', 'ross', 'rössli', 'cheval', 'gaul', 'лошадь'], ['ambient,message_received'], function(bot, message) {
     var request = require("request");
     var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=horse";
 
