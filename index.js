@@ -25,9 +25,25 @@ controller.hears(['identify yourself', 'who are you', 'what is your name'],
 
     });
 
-controller.hears(['horse', 'pferd', 'ross', 'rössli'], ['ambient,message_received'], function(bot, message) {
+controller.hears(['horse', 'pferd', 'ross', 'rössli', 'cheval', 'gaul'], ['ambient,message_received'], function(bot, message) {
     var request = require("request");
     var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=horse";
+
+    request({ url: url, json: true }, function (error, response, body) {
+
+        if (!error && response.statusCode === 200) {
+            var stringify = JSON.stringify(body);
+            var GIF = body.data.image_original_url;
+            bot.reply(message, 'Here is your random gif:smile::hrs:: ' +GIF+ '');
+        } else {
+            bot.reply(message, 'There was a problem with the API. Sorry:cry: no Gif right now');
+        }
+    });
+});
+
+controller.hears(['bojack'], ['ambient,message_received'], function(bot, message) {
+    var request = require("request");
+    var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=bojack";
 
     request({ url: url, json: true }, function (error, response, body) {
 
