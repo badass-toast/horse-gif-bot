@@ -4,7 +4,10 @@ if (!process.env.SLACK_TOKEN) {
 }
 
 
-
+var http = require("http");
+setInterval(function() {
+    http.get("http://<your app name>.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 
 var Botkit = require('./node_modules/botkit/lib/Botkit.js');
 var os = require('os');
