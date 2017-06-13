@@ -22,7 +22,7 @@ controller.hears(['identify yourself', 'who are you', 'what is your name'],
 
     });
 
-controller.hears(['horse', 'pferd', 'ross', 'rössli', 'cheval', 'gaul', 'лошадь'], ['ambient,message_received'], function(bot, message) {
+controller.hears(['horse', ' pferd ', ' ross ', ' rössli ', ' cheval ', ' gaul ', ' лошадь '], ['ambient,message_received'], function(bot, message) {
     var request = require("request");
     var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=horse";
 
@@ -38,7 +38,7 @@ controller.hears(['horse', 'pferd', 'ross', 'rössli', 'cheval', 'gaul', 'лош
     });
 });
 
-controller.hears(['bojack'], ['ambient,message_received'], function(bot, message) {
+controller.hears([' bojack '], ['ambient,message_received'], function(bot, message) {
     var request = require("request");
     var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=bojack";
 
@@ -54,7 +54,7 @@ controller.hears(['bojack'], ['ambient,message_received'], function(bot, message
     });
 });
 
-controller.hears(['unicorn', 'einhorn', 'fabulous'], ['ambient,message_received'], function(bot, message) {
+controller.hears([' unicorn ', ' einhorn '], ['ambient,message_received'], function(bot, message) {
     var request = require("request");
     var url = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=unicorn";
 
