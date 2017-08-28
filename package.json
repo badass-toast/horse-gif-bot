@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "now": {
+    "name": "horse-bot"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beepboophq/node-slack-bot.git"
